@@ -1,0 +1,9 @@
+:root{
+    --gray-gray-700: #4A5568;
+    --gradient-primary-bg: linear-gradient(225deg, #F76680 0%, #57007B 100%);
+    --gray-gray-50: #FAFAFA;
+     --gray-gray-900: #1A202C;
+    --brand-primary-bg: #57007B;
+    --gray-gray-600: #718096;
+    --section-background: #F7F7FA;
+}
