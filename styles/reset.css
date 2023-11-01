@@ -1,8 +1,5 @@
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
-* {
-  font-family: Inter;
-}
 
 * {
   margin: 0;
@@ -10,6 +7,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: Inter;
 }
 .button {
   font-weight: 600;
@@ -32,6 +30,10 @@
 .line{
   position: relative;
 }
+.center-line.line::before{
+
+  transform: translate(-34.5px);
+}
 .line::before{
   content: '';
   width: 69px;
@@ -39,4 +41,21 @@
   background: var(--gradient-primary-bg);
   position: absolute;
   top:-20px;
+}
+/*color*/
+.gradient-text{
+  background: var(--gradient-primary-bg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-border{
+  background: transparent;
+    background-image:linear-gradient(90deg, white, white), var(--gradient-primary-bg);
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    border: 1px solid transparent;
+}
+.gradient-bg{
+  background:var(--gradient-primary-bg);
 }
