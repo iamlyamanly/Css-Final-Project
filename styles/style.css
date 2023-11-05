@@ -203,7 +203,6 @@
     left: 105px;
   }
   .devsoftware_text {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -390,7 +389,7 @@
       width: 604px;
       height: 237px;
       gap: 20px;
-      border: 1px solid var(--shade-primary-lite-bg, #e7daed);
+      border: 1px solid var(--shade-primary-lite-bg);
       background: var(--gray-gray-50);
       padding: 51px 34px;
       .devapproach_card_icon {
@@ -406,7 +405,7 @@
         flex-direction: column;
         gap: 10px;
         .devapproach_card_text_title {
-          color: var(--gray-gray-900, #1a202c);
+          color: var(--gray-gray-900);
           font-size: 20px;
           font-weight: 600;
           line-height: 136.523%;
