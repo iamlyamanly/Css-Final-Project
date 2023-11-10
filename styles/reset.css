@@ -16,9 +16,11 @@
   border: none;
   color: var(--gray-gray-50);
   border-radius: 5px;
+  cursor: pointer;
 }
 .container {
   padding: 0 7.5%;
+
 }
 .balloon {
   min-height: 20px;
