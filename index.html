@@ -6,16 +6,62 @@
     <title>Logoipsum</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/reset.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!--Header-->
 
     <header>
       <nav class="navbar">
-        <div class="navbar_logo">
-          <img src="assets/logos/Logo.png" />
+        <div class="navbar_responsive_collapse">
+          <div class="navbar_logo">
+            <img src="assets/logos/Logo.png" />
+          </div>
+          <div class="navbar_responsive_btn">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <button class="button navbar_button navbar_button_responsive">Contact us</button>
+          </div>
         </div>
         <ul class="navbar_menu">
+          <li class="navbar_menu_item">
+            <a href="#" class="navbar_menu_item_link">About us</a>
+          </li>
+          <li class="navbar_menu_item">
+            <a href="#" class="navbar_menu_item_link">Services</a>
+          </li>
+          <li class="navbar_menu_item">
+            <a href="#" class="navbar_menu_item_link">Case Studies</a>
+          </li>
+          <li class="navbar_menu_item">
+            <a href="#" class="navbar_menu_item_link">Blog</a>
+          </li>
+          <li class="navbar_menu_item">
+            <a href="#" class="navbar_menu_item_link">How it Works</a>
+          </li>
+          <li class="navbar_menu_item">
+            <a href="#" class="navbar_menu_item_link">Hire</a>
+          </li>
+        </ul>
+        <ul class="navbar_menu_responsive collapse" id="navbar">
           <li class="navbar_menu_item">
             <a href="#" class="navbar_menu_item_link">About us</a>
           </li>
@@ -360,102 +406,104 @@
 
       <!--Development Approach section-->
 
-      <section class="container devapproach">
-        <div class="section_header_text_center line center-line">
-          <p>Our design and</p>
-          <span class="span">development approach</span>
-        </div>
-        <div class="devapproach_card_container">
-          <div class="devapproach_card">
-            <div class="devapproach_card_icon dark-bg">
-              <img src="/assets/logos/Rocket_perspective_matte.png" />
-            </div>
-            <div class="devapproach_card_text">
-              <p class="devapproach_card_text_title">UX Driven Engineering</p>
-              <p class="devapproach_card_text_desc">
-                Unlike other companies, we are a
-                <span class="dark-text">UX first</span> development company.
-                Projects are driven by designers and they make sure design and
-                experiences translate to code.
-              </p>
-            </div>
+      <section class="devapproach">
+        <div class="container">
+          <div class="section_header_text_center line center-line">
+            <p>Our design and</p>
+            <span class="span">development approach</span>
           </div>
-          <div class="devapproach_card">
-            <div class="devapproach_card_icon blue-bg">
-              <img src="/assets/logos/Code_perspective_matte (1).png" />
+          <div class="devapproach_card_container">
+            <div class="devapproach_card">
+              <div class="devapproach_card_icon dark-bg">
+                <img src="/assets/logos/Rocket_perspective_matte.png" />
+              </div>
+              <div class="devapproach_card_text">
+                <p class="devapproach_card_text_title">UX Driven Engineering</p>
+                <p class="devapproach_card_text_desc">
+                  Unlike other companies, we are a
+                  <span class="dark-text">UX first</span> development company.
+                  Projects are driven by designers and they make sure design and
+                  experiences translate to code.
+                </p>
+              </div>
             </div>
-            <div class="devapproach_card_text">
-              <p class="devapproach_card_text_title">
-                Developing Shared Understanding
-              </p>
-              <p class="devapproach_card_text_desc">
-                Unlike other companies, we are a
-                <span class="blue-text">UX first</span> development company.
-                Projects are driven by designers and they make sure design and
-                experiences translate to code.
-              </p>
+            <div class="devapproach_card">
+              <div class="devapproach_card_icon blue-bg">
+                <img src="/assets/logos/Code_perspective_matte (1).png" />
+              </div>
+              <div class="devapproach_card_text">
+                <p class="devapproach_card_text_title">
+                  Developing Shared Understanding
+                </p>
+                <p class="devapproach_card_text_desc">
+                  Unlike other companies, we are a
+                  <span class="blue-text">UX first</span> development company.
+                  Projects are driven by designers and they make sure design and
+                  experiences translate to code.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="devapproach_card">
-            <div class="devapproach_card_icon pink-bg">
-              <img src="/assets/logos/Heart_rate_perspective_matte.png" />
+            <div class="devapproach_card">
+              <div class="devapproach_card_icon pink-bg">
+                <img src="/assets/logos/Heart_rate_perspective_matte.png" />
+              </div>
+              <div class="devapproach_card_text">
+                <p class="devapproach_card_text_title">
+                  Proven Experience and Expertise
+                </p>
+                <p class="devapproach_card_text_desc">
+                  Unlike other companies, we are a
+                  <span class="pink-text">UX first</span> development company.
+                  Projects are driven by designers and they make sure design and
+                  experiences translate to code.
+                </p>
+              </div>
             </div>
-            <div class="devapproach_card_text">
-              <p class="devapproach_card_text_title">
-                Proven Experience and Expertise
-              </p>
-              <p class="devapproach_card_text_desc">
-                Unlike other companies, we are a
-                <span class="pink-text">UX first</span> development company.
-                Projects are driven by designers and they make sure design and
-                experiences translate to code.
-              </p>
+            <div class="devapproach_card">
+              <div class="devapproach_card_icon green-bg">
+                <img src="/assets/logos/Shield_perspective_matte.png" />
+              </div>
+              <div class="devapproach_card_text">
+                <p class="devapproach_card_text_title">
+                  Security & Intellectual Property (IP)
+                </p>
+                <p class="devapproach_card_text_desc">
+                  Unlike other companies, we are a
+                  <span class="green-text">UX first</span> development company.
+                  Projects are driven by designers and they make sure design and
+                  experiences translate to code.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="devapproach_card">
-            <div class="devapproach_card_icon green-bg">
-              <img src="/assets/logos/Shield_perspective_matte.png" />
+            <div class="devapproach_card">
+              <div class="devapproach_card_icon yellow-bg">
+                <img src="/assets/logos/Success_perspective_matte.png" />
+              </div>
+              <div class="devapproach_card_text">
+                <p class="devapproach_card_text_title">Code Reviews</p>
+                <p class="devapproach_card_text_desc">
+                  Unlike other companies, we are a
+                  <span class="yellow-text">UX first</span> development company.
+                  Projects are driven by designers and they make sure design and
+                  experiences translate to code.
+                </p>
+              </div>
             </div>
-            <div class="devapproach_card_text">
-              <p class="devapproach_card_text_title">
-                Security & Intellectual Property (IP)
-              </p>
-              <p class="devapproach_card_text_desc">
-                Unlike other companies, we are a
-                <span class="green-text">UX first</span> development company.
-                Projects are driven by designers and they make sure design and
-                experiences translate to code.
-              </p>
-            </div>
-          </div>
-          <div class="devapproach_card">
-            <div class="devapproach_card_icon yellow-bg">
-              <img src="/assets/logos/Success_perspective_matte.png" />
-            </div>
-            <div class="devapproach_card_text">
-              <p class="devapproach_card_text_title">Code Reviews</p>
-              <p class="devapproach_card_text_desc">
-                Unlike other companies, we are a
-                <span class="yellow-text">UX first</span> development company.
-                Projects are driven by designers and they make sure design and
-                experiences translate to code.
-              </p>
-            </div>
-          </div>
-          <div class="devapproach_card">
-            <div class="devapproach_card_icon gradient-bg">
-              <img src="/assets/logos/Padlock_perspective_matte.png" />
-            </div>
-            <div class="devapproach_card_text">
-              <p class="devapproach_card_text_title">
-                Quality Assurance & Testing
-              </p>
-              <p class="devapproach_card_text_desc">
-                Unlike other companies, we are a
-                <span class="gradient-text">UX first</span> development company.
-                Projects are driven by designers and they make sure design and
-                experiences translate to code.
-              </p>
+            <div class="devapproach_card">
+              <div class="devapproach_card_icon gradient-bg">
+                <img src="/assets/logos/Padlock_perspective_matte.png" />
+              </div>
+              <div class="devapproach_card_text">
+                <p class="devapproach_card_text_title">
+                  Quality Assurance & Testing
+                </p>
+                <p class="devapproach_card_text_desc">
+                  Unlike other companies, we are a
+                  <span class="gradient-text">UX first</span> development
+                  company. Projects are driven by designers and they make sure
+                  design and experiences translate to code.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -625,22 +673,20 @@
             </div>
           </div>
 
-          <img src="/assets/logos/Trophy_perspective_matte.png">
+          <img src="/assets/logos/Trophy_perspective_matte.png" />
         </div>
         <div class="alcaline_works_responsive">
           <div class="alcaline_works_topcontainer_card">
             <div class="alcaline_works_card_content">
               <div class="alcaline_works_card_content_title">
                 <p>
-                  <span class="gradient-text">#1</span> Assemble the right
-                  team
+                  <span class="gradient-text">#1</span> Assemble the right team
                 </p>
               </div>
               <div class="alcaline_works_card_content_desc">
                 <p>
-                  We handle all aspects of vetting and choosing the right
-                  team that you don't have the time, expertise, or desire to
-                  do.
+                  We handle all aspects of vetting and choosing the right team
+                  that you don't have the time, expertise, or desire to do.
                 </p>
               </div>
             </div>
@@ -650,15 +696,13 @@
             <div class="alcaline_works_card_content">
               <div class="alcaline_works_card_content_title">
                 <p>
-                  <span class="gradient-text">#1</span> Assemble the right
-                  team
+                  <span class="gradient-text">#1</span> Assemble the right team
                 </p>
               </div>
               <div class="alcaline_works_card_content_desc">
                 <p>
-                  We handle all aspects of vetting and choosing the right
-                  team that you don't have the time, expertise, or desire to
-                  do.
+                  We handle all aspects of vetting and choosing the right team
+                  that you don't have the time, expertise, or desire to do.
                 </p>
               </div>
             </div>
@@ -668,15 +712,13 @@
             <div class="alcaline_works_card_content">
               <div class="alcaline_works_card_content_title">
                 <p>
-                  <span class="gradient-text">#1</span> Assemble the right
-                  team
+                  <span class="gradient-text">#1</span> Assemble the right team
                 </p>
               </div>
               <div class="alcaline_works_card_content_desc">
                 <p>
-                  We handle all aspects of vetting and choosing the right
-                  team that you don't have the time, expertise, or desire to
-                  do.
+                  We handle all aspects of vetting and choosing the right team
+                  that you don't have the time, expertise, or desire to do.
                 </p>
               </div>
             </div>
@@ -686,15 +728,13 @@
             <div class="alcaline_works_card_content">
               <div class="alcaline_works_card_content_title">
                 <p>
-                  <span class="gradient-text">#1</span> Assemble the right
-                  team
+                  <span class="gradient-text">#1</span> Assemble the right team
                 </p>
               </div>
               <div class="alcaline_works_card_content_desc">
                 <p>
-                  We handle all aspects of vetting and choosing the right
-                  team that you don't have the time, expertise, or desire to
-                  do.
+                  We handle all aspects of vetting and choosing the right team
+                  that you don't have the time, expertise, or desire to do.
                 </p>
               </div>
             </div>
@@ -704,15 +744,13 @@
             <div class="alcaline_works_card_content">
               <div class="alcaline_works_card_content_title">
                 <p>
-                  <span class="gradient-text">#1</span> Assemble the right
-                  team
+                  <span class="gradient-text">#1</span> Assemble the right team
                 </p>
               </div>
               <div class="alcaline_works_card_content_desc">
                 <p>
-                  We handle all aspects of vetting and choosing the right
-                  team that you don't have the time, expertise, or desire to
-                  do.
+                  We handle all aspects of vetting and choosing the right team
+                  that you don't have the time, expertise, or desire to do.
                 </p>
               </div>
             </div>
@@ -722,22 +760,19 @@
             <div class="alcaline_works_card_content">
               <div class="alcaline_works_card_content_title">
                 <p>
-                  <span class="gradient-text">#1</span> Assemble the right
-                  team
+                  <span class="gradient-text">#1</span> Assemble the right team
                 </p>
               </div>
               <div class="alcaline_works_card_content_desc">
                 <p>
-                  We handle all aspects of vetting and choosing the right
-                  team that you don't have the time, expertise, or desire to
-                  do.
+                  We handle all aspects of vetting and choosing the right team
+                  that you don't have the time, expertise, or desire to do.
                 </p>
               </div>
             </div>
             <div class="alcaline_works_topcontainer_bottom_line"></div>
           </div>
-          <img src="/assets/logos/Trophy_perspective_matte.png">
-
+          <img src="/assets/logos/Trophy_perspective_matte.png" />
         </div>
       </section>
 
@@ -930,5 +965,11 @@
         <p>&copy; 2023 Copyright by Agency Solutions. All rights reserved.</p>
       </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

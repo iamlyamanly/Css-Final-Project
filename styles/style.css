@@ -5,9 +5,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 25px;
+  padding: 10px 25px !important;
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
- 
+  .navbar_responsive_btn{
+    display: none;
+  }
   .navbar_logo {
     display: flex;
   }
@@ -506,7 +508,6 @@
             width: 2px;
             height: 30px;
             background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
-            margin-top: 15px;
           }
         }
       }
@@ -536,7 +537,6 @@
             width: 2px;
             height: 30px;
             background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
-            margin-top: 15px;
           }
         }
       }
@@ -712,6 +712,7 @@
   color: var(--gray-gray-700);
 }
 @media only screen and (max-width: 640px){
+ 
   .services_pagination_container{
     flex-direction: column;
     gap:16px;
@@ -722,9 +723,48 @@
   .head_balloon{
     display: none;
   }
+  .devapproach_card{
+    height: auto;
+  }
   .navbar{
-    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
     width:100%;
+    .navbar_menu{
+      display: none;
+    }
+    .navbar_menu_responsive{
+      flex-direction: column;
+      align-items: center;
+      gap:12px;
+      display: flex;
+      text-transform: capitalize;
+      .navbar_menu_item_link {
+        color: var(--gray-gray-700);
+        font-weight: 500;
+        line-height: 25px;
+      }
+    }
+    .navbar_button {
+      display: none;
+    }
+    .navbar_responsive_collapse{
+      display: flex;
+      width: 100%;
+      align-items: flex-start;
+      justify-content: space-between;
+      .navbar_responsive_btn{
+        display: flex !important;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        gap:12px;
+        .navbar_button_responsive{
+          display: block !important;
+        }
+      }
+
+    }
   }
   .head{
    flex-direction: column-reverse;
