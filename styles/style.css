@@ -390,7 +390,6 @@
       display: flex;
       align-items: flex-start;
       width: 604px;
-      height: 237px;
       gap: 20px;
       border: 1px solid var(--shade-primary-lite-bg);
       background: var(--gray-gray-50);
@@ -722,9 +721,6 @@
   }
   .head_balloon{
     display: none;
-  }
-  .devapproach_card{
-    height: auto;
   }
   .navbar{
     flex-direction: column;
